@@ -611,7 +611,8 @@ MainSwitch:
 			D2Bot.updateRuns();
 		}
 
-		ControlAction.createGame(Misc.randomString(15, true), Misc.randomString(15, true), Account.get().difficulty, StarterConfig.CreateGameDelay * 1000);
+		// ControlAction.createGame(Misc.randomString(15, true), Misc.randomString(15, true), Account.get().difficulty, StarterConfig.CreateGameDelay * 1000);
+		ControlAction.createGame((gameInfo.gameName === "?" ? randomString(null,true) : gameInfo.gameName + gameCount), (gameInfo.gamePass === "?" ? randomString(null,true) : gameInfo.gamePass), Account.get().difficulty, StarterConfig.CreateGameDelay * 1000);
 
 		lastGameStatus = "pending";
 

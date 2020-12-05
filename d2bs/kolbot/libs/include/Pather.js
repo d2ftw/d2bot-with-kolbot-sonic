@@ -769,7 +769,7 @@ Pather.openDoors = function (x, y) {
 
                     while (getTickCount() - tick < 1000) {
                         if (door.mode === 2) {
-                            me.overhead("Opened a door!");
+                            // me.overhead("Opened a door!");
 
                             return true;
                         }
@@ -819,7 +819,7 @@ Pather.useUnit = function(type, id, targetArea, clearPath) {
     for (i = 0; i < 7; i += 1) {
 		if (i > 2) {
 			Attack.deploy(unit, 20, 5, 30);
-			me.overhead("Let me in, hoe.");
+			// me.overhead("Let me in, hoe.");
 		}
 		
         if (getDistance(me, unit) > 5) {

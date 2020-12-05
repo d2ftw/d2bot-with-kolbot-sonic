@@ -464,7 +464,7 @@ ModeLoop:
 
 						while (getTickCount() - tick < 1000) {
 							if (door.mode === 2) {
-								me.overhead("Opened a door!");
+								//me.overhead("Opened a door!");
 
 								return true;
 							}
@@ -933,7 +933,7 @@ ModeLoop:
 
 							if (!getWaypoint(this.wpAreas.indexOf(targetArea))) {
 								me.cancel();
-								me.overhead("Trying to get the waypoint");
+								//me.overhead("Trying to get the waypoint");
 
 								if (this.getWP(targetArea)) {
 									return true;

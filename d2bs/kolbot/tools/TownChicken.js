@@ -101,7 +101,7 @@ function main() {
 			}
 
 			try {
-				me.overhead("Going to town");
+				// me.overhead("Going to town");
 				Town.visitTown();
 			} catch (e) {
 				//D2Bot.printToConsole("Chicken error : " + e);
